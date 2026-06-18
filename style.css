@@ -366,5 +366,30 @@ button:hover{
     background: #005fa3;
     transform: translateY(-2px);
 }
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .logo{
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li{
+        margin: 5px 10px;
+    }
+}
+
 
 
