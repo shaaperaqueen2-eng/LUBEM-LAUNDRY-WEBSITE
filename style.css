@@ -152,7 +152,7 @@ footer{
 }
 
 table{
-    width: 80%;
+    width: 70%;
     margin: auto;
     border-collapse: collapse;
 }
@@ -176,8 +176,35 @@ tr:hover{
     background-color: #e6f2ff;
 }
 
+.grand-total{
+    background-color: #0077cc;
+    color: white;
+    font-weight: bold;
+}
+
+.quote-note{
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
 
 
+
+
+
+.quote-btn{
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.quote-btn:hover{
+    background-color: #005fa3;
+}
 
 /* Contact Page */
 
