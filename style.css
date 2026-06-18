@@ -1,0 +1,343 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav{
+    background-color: #0077cc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero{
+    height: 90vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("https://images.unsplash.com/photo-1582735689369-4fe89db7114c");
+    
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content{
+    max-width: 700px;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #005fa3;
+}
+
+/* Footer */
+footer{
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}/* Services Page */
+.services{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h1{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.services p{
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.service-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card{
+    background: #f4f4f4;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.service-card h2{
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.service-card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+
+/* Pricing Page */
+.pricing{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pricing h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.pricing p{
+    margin-bottom: 30px;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th,
+td{
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+th{
+    background-color: #0077cc;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #f4f4f4;
+}
+
+tr:hover{
+    background-color: #e6f2ff;
+}
+
+
+
+
+/* Contact Page */
+
+.contact{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.contact h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea{
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button{
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #005fa3;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.contact-form{
+    flex: 2;
+}
+
+.business-info{
+    flex: 1;
+    background-color: #d7d4e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Contact Form */
+.contact-form{
+    flex: 2;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Business Info */
+.business-info{
+    flex: 1;
+    background: linear-gradient(135deg, #0077cc, #00aaff);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-info:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Business Info Heading */
+.business-info h2{
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    padding-bottom: 10px;
+}
+
+/* WhatsApp Link */
+.business-info a{
+    color: #25D366;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.business-info a:hover{
+    background: #25D366;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Inputs */
+input,
+textarea{
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus{
+    border-color: #0077cc;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0,119,204,0.3);
+}
+
+/* Button */
+button{
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #005fa3;
+    transform: translateY(-2px);
+}
+
+
